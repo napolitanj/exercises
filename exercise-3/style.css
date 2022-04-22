@@ -27,6 +27,7 @@ body {
   padding: 20px;
   text-align: center;
   user-select: none;
+  transition: all 0.4s ease;
 }
 
 .menuItem:hover {
