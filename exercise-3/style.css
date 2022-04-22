@@ -1,5 +1,5 @@
 body {
-  width:100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -26,6 +26,7 @@ body {
   width: 100%;
   padding: 20px;
   text-align: center;
+  user-select: none;
 }
 
 .menuItem:hover {
@@ -55,6 +56,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
+  transition: all 0.5s ease;
 }
 
 .more:hover .moreMenu {
@@ -64,8 +66,17 @@ body {
   transform: translateY(0%);
 }
 
+.moreItem {
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
 .moreItem:hover {
   color: white;
+}
+
+.moreItem:active {
+  transform: translateY(3px);
 }
 
 .content {
