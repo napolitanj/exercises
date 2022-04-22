@@ -1,1 +1,1 @@
-A simple dropdown menu template.
+A simple mobile-menu template.

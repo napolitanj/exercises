@@ -1,34 +1,73 @@
-.dropButton{
-    cursor:pointer;
-    width:70px;
-    height:20px;
-    background:grey;
-    padding:10px;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
+body {
+  width:100%;
+  margin: 0;
 }
 
-.dropMenu {
-    margin-left:-10px;
-    width:90px;
-    visibility:hidden;
-    opacity:0;
-    transform:translateY(-2em);
-    transition: all 0.3s ease 0s;
+.header {
+  width: 100%;
+  height: 10vw;
+  text-align: center;
+  color: white;
+  background-color: #444;
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.dropButton:hover .dropMenu {
-    visibility:visible;
-    opacity:1;
-    transform: translateY(0%);
-    background:grey;
+.mainMenu {
+  display: flex;
+  justify-content: space-around;
 }
 
-.menuItem {
-    padding:10px;
+.menuItem,
+.more {
+  height: 3vw;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
 }
 
 .menuItem:hover {
-    background:#888;
+  cursor: pointer;
+  background-color: #999;
+  color: white;
+}
+
+.more:hover {
+  cursor: pointer;
+  background-color: #999;
+  color: white;
+}
+
+.moreMenu {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  color: black;
+  transform: translateY(-2vw);
+
+  text-align: left;
+  margin-left: -20px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+}
+
+.more:hover .moreMenu {
+  background-color: #999;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.moreItem:hover {
+  color: white;
+}
+
+.content {
+  background-color: #919221;
 }
